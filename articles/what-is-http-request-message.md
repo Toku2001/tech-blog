@@ -3,7 +3,7 @@ title: "HTTPリクエスト・レスポンスとは何か"
 emoji: "🛜"
 type: "tech" # tech or idea
 topics: ["network", "http", "プロトコル"]
-published: false
+published: true
 ---
 
 ## はじめに
