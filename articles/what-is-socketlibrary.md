@@ -2,8 +2,8 @@
 title: "HTTPリクエストにおけるSocketライブラリの役割とは"
 emoji: "🪢"
 type: "tech" # tech or idea
-topics: ["Socketライブラリ", "ネットワーク"]
-published: false # trueの場合は公開される
+topics: ["Socket", "ネットワーク", "HTTP"]
+published: true # trueの場合は公開される
 ---
 
 ## はじめに
@@ -215,7 +215,7 @@ curl -sv http://example.com -o /dev/null
 | `recv` | 相手からデータを受け取る | `HTTP/1.1 200 OK` や `Content-Type: text/html` が返ってきたことで確認できた |
 | `close` | 通信終了後に接続を閉じる | 今回は明示的に表示していないが、`curl` や `nc` の終了時に内部で行われる |
 
-このように見ると、ターミナルで確認した内容は単なるコマンド実行結果ではなく、Socketライブラリの各機能がどの場面で使われているかを観察したものだと分かります。
+このように見ると、ターミナルで確認したコマンド実行結果が、Socketライブラリの各機能がどの場面で使われているかをイメージできたでしょうか。
 
 ## まとめ
 
